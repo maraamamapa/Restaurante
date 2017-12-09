@@ -1,6 +1,6 @@
 tapas_homepage:
     path:     /
-    defaults: { _controller: tapasBundle:Default:index }
+    defaults: { _controller: tapasBundle:tapas:index }
 
 tapas_crear:
     path:     /crearTapa

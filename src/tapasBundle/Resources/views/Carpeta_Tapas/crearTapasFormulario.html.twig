@@ -1,3 +1,8 @@
-{{ form_start(formulario) }}
-{{ form_widget(formulario) }}
-{{ form_end(formulario) }}
+{% extends '::base3.html.twig' %}
+{% block body %}
+<div class="form-group col-lg-4">
+  {{ form_start(formulario) }}
+  {{ form_widget(formulario) }}
+  {{ form_end(formulario) }}
+</div>
+{% endblock %}

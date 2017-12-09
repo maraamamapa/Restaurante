@@ -1,4 +1,22 @@
+{% extends '::base2.html.twig' %}
+{% block BD %}
 {% for item in tablaTapas %}
-    {{item.nombre}}
-    <hr>
+
+  <div class="col-md-4 mb-4 mb-md-0">
+    <div class="card h-100">
+      <img class="card-img-top" src="http://placehold.it/750x450" alt="">
+      <div class="card-body text-center">
+        <h4 class="card-title m-0">{{item.nombre}}
+          <br>
+          <small class="text-muted">{{item.descripcion}}</small>
+          <br>
+          Precio:<small class="text-muted">{{item.precio}}</small><br>
+          <a href="{{ path('tapas_mostrarId', {'id': item.id  }) }}" class="btn btn-info">Mas info</a>
+          <a href="{{ path('tapas_borrar', {'id': item.id  }) }}" class="btn btn-danger">Borrar</a>
+        </h4>
+      </div>
+    </div>
+  </div>
+
 {% endfor %}
+{% endblock %}

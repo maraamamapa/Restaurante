@@ -1,2 +1,13 @@
+{% extends '::base4.html.twig' %}
+{% block titular %}
+Informacion  Del insertado
+{% endblock %}
+{% block body %}
 
-        <p>Nombre:{{ ultimoInsertado.nombre }}</p>
+  <div style="margin:0 auto;">
+    Nombre:{{ultimoInsertado.nombre}}<br>
+    Descripcion:{{ultimoInsertado.descripcion}}<br>
+    Precio:{{ultimoInsertado.precio}}<br>
+    Foto:{{ultimoInsertado.foto}}
+  </div>
+{% endblock %}
