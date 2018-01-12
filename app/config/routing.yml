@@ -1,3 +1,7 @@
+usuarios:
+    resource: "@usuariosBundle/Resources/config/routing.yml"
+    prefix:   /usuarios
+
 tapas:
     resource: "@tapasBundle/Resources/config/routing.yml"
     prefix:   /
